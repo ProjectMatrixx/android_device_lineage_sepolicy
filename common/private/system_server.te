@@ -55,3 +55,6 @@ allow system_server ax_sandbox_vault_file:file create_file_perms;
 
 # Theme Engine
 add_service(system_server, theme_engine_service);
+
+# Let system server set vbmeta prop
+set_prop(system_server, bootloader_prop)
